@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language, Technology, and Knowledge</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>How do language and technology shape the knowledge we produce?</h1>
+    </header>
+    
+    <main class="index-main">
+        <h2>What is knowledge?</h2>
+        <p class="content" id="content-text-intro"></p>
+        <h2>How do we produce knowledge?</h2>
+        <p class="content" id="content-text"></p>
+        <h2>See how does language and technology shape the production of knowledge</h2>
+        <nav>
+            <a href="lang.html" class="nav-button">Language</a>
+            <a href="tech.html" class="nav-button">Technology</a>
+        </nav>
+    </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const contentIntroElement = document.getElementById('content-text-intro');
+            if (contentIntroElement) {
+                const introText = content.getText('index_intro');
+                contentIntroElement.textContent = introText.trim();
+            }
+            const contentElement = document.getElementById('content-text');
+            if (contentElement) {
+                const text = content.getText('index');
+                contentElement.textContent = text.trim();
+            }
+        });
+    </script>
+</body>
+</html>

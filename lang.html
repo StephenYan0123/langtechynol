@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>How do language and technology shape the knowledge we produce?</h1>
+    </header>
+    
+    <main class="lang-main">
+        <h2>What is language?</h2>
+        <p class="content" id="content-text"></p>
+        <h2>Language affect these aspects of the production of knowledge:</h2>
+        <nav>
+            <a href="lang_a1.html" class="nav-button">Categorization</a>
+            <a href="lang_a2.html" class="nav-button">Justification</a>
+            <a href="lang_a3.html" class="nav-button">Power</a>
+            <a href="lang_a4.html" class="nav-button">Formation</a>
+            <a href="lang_a5.html" class="nav-button">Transfer</a>
+        </nav>
+        <a href="index.html" class="back-button">To home page</a>
+    </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const contentElement = document.getElementById('content-text');
+            if (contentElement) {
+                const text = content.getText('lang');
+                // 将文本中的 \n 保留，CSS white-space: pre-line 会处理换行
+                contentElement.textContent = text.trim();
+            }
+        });
+    </script>
+</body>
+</html>

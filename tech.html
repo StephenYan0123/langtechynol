@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technology</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>How do language and technology shape the knowledge we produce?</h1>
+    </header>
+    
+    <main class="tech-main">
+        <h2>What is technology?</h2>
+        <p class="content" id="content-text"></p>
+        <h2>Technology affect these aspects of the production of knowledge:</h2>
+        <nav>
+            <a href="tech_a1.html" class="nav-button">Experimental knowledge</a>
+            <a href="tech_a2.html" class="nav-button">Procedural knowledge</a>
+            <a href="tech_a3.html" class="nav-button">Propositional knowledge</a>
+        </nav>
+        <a href="index.html" class="back-button">To home page</a>
+    </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const contentElement = document.getElementById('content-text');
+            if (contentElement) {
+                contentElement.textContent = content.getText('tech');
+            }
+        });
+    </script>
+</body>
+</html>

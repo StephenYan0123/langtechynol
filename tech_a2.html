@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 2 - Aspect 2</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>How do language and technology shape the knowledge we produce?</h1>
+    </header>
+    
+    <main>
+        <h2>Procedural knowledge</h2>
+        <div id="content-container"></div>
+        <a href="tech.html" class="back-button">To technology page</a>
+    </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const container = document.getElementById('content-container');
+            if (container) {
+                const texts = content.getTexts('tech_a2');
+                texts.forEach(function(text) {
+                    const textElement = document.createElement('p');
+                    textElement.className = 'content';
+                    textElement.textContent = text.trim();
+                    container.appendChild(textElement);
+                });
+            }
+        });
+    </script>
+</body>
+</html>
+
